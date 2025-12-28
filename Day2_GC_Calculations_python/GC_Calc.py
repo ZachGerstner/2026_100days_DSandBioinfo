@@ -1,3 +1,7 @@
+# Author  : Zach Gerstner
+# Purpose : Practicing calculating GC content with biopython package
+# Date    : 28 Dec 2025
+
 from Bio.SeqUtils import gc_fraction
 from Bio import SeqIO
 import sys
