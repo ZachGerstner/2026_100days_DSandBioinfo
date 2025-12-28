@@ -22,7 +22,9 @@ def fasta_dir_parser(directory_path):
         for sequence in SeqIO.parse(fasta, "fasta"):
             print(f"ID : {sequence.id}")
             print(f"Description : {sequence.description}")
-            print(f"Sequence : {sequence.seq}")
+            tmp = sequence.seq
+            concatseq = str(tmp)[:80]
+            print(f"Sequence : {concatseq}")
             print(f"Sequence Len : {len(sequence.seq)}")
             print("~" * 80)
 
